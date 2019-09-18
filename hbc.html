@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Welcome to the most extraordinary hotel in Boston Massachusetts" />
+  <meta name="keywords" content="hotel,boston hotel,new england hotel" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
+  <title>HOME BROTHERS CLUB</title>
+</head>
+
+<body>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Main Styling */
+    html,
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7em;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3 {
+      padding-bottom: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    /* Utility Classes */
+    .container {
+      margin: auto;
+      max-width: 1100px;
+      overflow: auto;
+      padding: 0 20px;
+    }
+
+    .text-primary {
+      color: rgb(56, 122, 197);
+    }
+
+    .lead {
+      font-size: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      font-size: 18px;
+      color: #fff;
+      background: #333;
+      padding: 13px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /*.btn:hover {
+        background: rgb(56, 122, 197);
+        color: #333;
+      }*/
+
+    .btn-light {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .bg-dark {
+      background: #333;
+      color: #fff;
+    }
+
+    .bg-light {
+      background: rgb(56, 122, 197);
+      color: white;
+    }
+
+    .bg-light1 {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .bg-primary {
+      background: rgb(56, 122, 197);
+      color: white;
+    }
+
+    .bg-grey {
+      background: rgb(223, 224, 224);
+      color: black
+    }
+
+    .clr {
+      clear: both;
+    }
+
+    .l-heading {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+
+    /* Padding */
+    .py-1 {
+      padding: 10px 0;
+    }
+
+    .py-2 {
+      padding: 20px 0;
+    }
+
+    .py-3 {
+      padding: 30px 0;
+    }
+
+    /* Navbar */
+    #navbar {
+      background: rgb(223, 224, 224);
+      color: rgb(56, 122, 197);
+      overflow: auto;
+    }
+
+    #navbar a {
+      color: rgb(56, 122, 197);
+    }
+
+    #navbar .logo {
+      float: left;
+      padding-top: 10px;
+    }
+
+    #navbar ul {
+      list-style: none;
+      float: right;
+    }
+
+    #navbar ul li {
+      float: left;
+    }
+
+    #navbar ul li a {
+      display: block;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #navbar ul li a:hover,
+    #navbar ul li a.current {
+      background: rgb(56, 122, 197);
+      color: white;
+    }
+
+    /* Showcase */
+    #showcase {
+      background: url("../viespire.jpg") no-repeat center center/cover;
+      height: 600px;
+      margin-left: 70px;
+      margin-right: 70px;
+    }
+
+    #showcase .showcase-content {
+      color: #fff;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    #showcase .showcase-content h1 {
+      font-size: 60px;
+      line-height: 1.2em;
+    }
+
+    #showcase .showcase-content p {
+      padding-bottom: 20px;
+      line-height: 1.7em;
+    }
+
+
+
+    /* About Info */
+    #about-info .info-right {
+      float: right;
+      width: 50%;
+      min-height: 100%;
+    }
+
+    #about-info .info-right img {
+      display: block;
+      margin: auto;
+      width: 40%;
+      border-radius: 50%;
+    }
+
+    /* #about-info .info-right h3 {
+      text-align: center;
+      margin-top: 10px;
+      color: rgb(56, 122, 197);
+    } */
+
+    #about-info .info-left {
+      float: left;
+      width: 50%;
+      min-height: 100%;
+    }
+
+    #about-info .info-left h3 {
+      color: rgb(56, 122, 197);
+
+    }
+
+    #about-info .container {
+      margin-top: 100px;
+    }
+
+    /* Features */
+    #features h3 {
+      text-align: center;
+      background: rgb(56, 122, 197);
+      padding-top: 50px;
+      color: white;
+    }
+
+    .box {
+      float: left;
+      width: 33.3%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .box i {
+      margin-bottom: 5px;
+    }
+
+    /*events*/
+    #events h3 {
+      text-align: center;
+      background: rgb(223, 224, 224);
+      padding-top: 50px;
+      color: black;
+    }
+
+
+
+    /* Testimonials */
+    #comments {
+      height: 100%;
+      background: url("tfoz.jpg") no-repeat center center/cover;
+      padding-top: 100px;
+    }
+
+    #comments h2 {
+      color: #fff;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    #comments .comment {
+      padding: 20px;
+      margin-bottom: 40px;
+      border-radius: 5px;
+      opacity: 0.9;
+    }
+
+    #comments .comment img {
+      width: 100px;
+      float: left;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    #Social-Media h1 {
+      text-align: center;
+      background: rgb(56, 122, 197);
+      padding-top: 50px;
+      color: white;
+    }
+
+
+
+    #Social-Media p {
+      text-align: center;
+      background: rgb(56, 122, 197);
+      color: white;
+      font: bold;
+      margin: 0px;
+    }
+
+    /* Footer */
+    #main-footer {
+      text-align: center;
+      background: #444;
+      color: #fff;
+      padding: 20px;
+    }
+  </style>
+
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <img src="pnglogo.jpeg" class="logo" />
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="showcase">
+      <div class="container">
+        <div class="showcase-content">
+          <h1><span class="text-primary">"Domine </span><img src="pnglogo.jpeg" /> Dirige Nos"</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about-info" class="bg-light1 py-3">
+    <div class="container">
+      <div class="info-left">
+        <i class="fas fa-quote-right fa-3x"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem veritatis illo, similique labore voluptate nulla
+          animi dolorum eius laborum illum, nesciunt quod reprehenderit dicta
+          autem vel nobis minima sit deleniti!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A velit
+          voluptatem impedit voluptate. Doloribus, voluptas dolore! Cupiditate
+          aliquid sequi deserunt.
+        </p>
+        <h3>THE PRESIDENT <br> 2019/2020</h3>
+
+      </div>
+      <div class="info-right">
+        <img src="presido.jpeg" alt="hotel" />
+
+
+      </div>
+    </div>
+  </section>
+
+  <div class="clr"></div>
+
+  <section id="features">
+    <h3>THE CLUB</h3>
+    <div class="box bg-light">
+      <i class="fas fa-map-marker-alt fa-3x"></i>
+      <h3>LOCATION <br> Abeokuta</h3>
+
+    </div>
+    <div class="box bg-light">
+      <i class="far fa-calendar-alt fa-3x"></i>
+      <h3>YEAR ESTABLISD <br> 2019</h3>
+
+    </div>
+    <div class="box bg-light">
+      <i class="fas fa-users fa-3x"></i>
+      <h3>MEMBERS <br> 11</h3>
+
+    </div>
+  </section>
+
+  <div class="clr"></div>
+
+  <section id="comments" class="bg-light1 py-3">
+    <div class="container">
+      <h2 class="l-heading">What is HBC?</h2>
+      <div class="comment bg-primary">
+        <img src="larry.jpg" alt="Secretary">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi quibusdam, dolorum maxime cum
+          numquam quisquam, deleniti eum incidunt, velit non consectetur. Facere, ipsa maxime, ullam id amet odio
+          laboriosam sit iusto tempore fugit exercitationem, a dolore quo maiores nisi!</p>
+      </div>
+
+      <div class="comment bg-primary">
+        <img src="femi.jpeg" alt="Member">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi quibusdam, dolorum maxime cum
+          numquam quisquam, deleniti eum incidunt, velit non consectetur. Facere, ipsa maxime, ullam id amet odio
+          laboriosam sit iusto tempore fugit exercitationem, a dolore quo maiores nisi!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="events">
+    <h3>OUR EVENTS</h3>
+    <div class="box bg-grey">
+      <i class="far fa-calendar-alt fa-3x"></i>
+      <h3>GENERAL MEETINGS </h3>
+
+    </div>
+    <div class="box bg-grey">
+      <i class="far fa-calendar-alt fa-3x"></i>
+      <h3>SPECIAL EVENTS</h3>
+
+    </div>
+    <div class="box bg-grey">
+      <i class="far fa-calendar-alt fa-3x"></i>
+      <h3>EXCO MEETINGS </h3>
+
+    </div>
+  </section>
+
+  <div class="clr"></div>
+
+
+  <section id="Social-Media">
+    <h1>Stay Connected</h1>
+    <p>Whether you are a member, a visitor, or just curious about our work, we would be happy to stay in touch with
+      you.</p>
+    <div class="box bg-primary">
+      <i> <a href="#" class="button fab fa-facebook fa-3x"></a> </i>
+      <p>@hbcNigeria </p>
+
+    </div>
+    <div class="box bg-primary">
+      <i> <a href="#" class="button fab fa-twitter fa-3x"></a></i>
+      <p>@hbc</p>
+
+    </div>
+    <div class="box bg-primary">
+      <i> <a href="#" class="fab fa-instagram fa-3x"></a></i>
+      <p>@hbcNig </p>
+
+    </div>
+  </section>
+
+  <div class="clr"></div>
+
+  <footer id="main-footer">
+    <p> HBC &copy; 2019, All Rights Reserved <br><span class="text-primary"> "Domine </span> Dirige Nos"</p>
+  </footer>
+
+
+</body>
+
+</html>
