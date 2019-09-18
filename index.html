@@ -1,152 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HOME</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 768px)"
-      href="mobile.css"
-    />
-  </head>
 
-  <body>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>HOME</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css" />
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Home Info */
+    #home-info {
+      height: 640px;
+      margin: 0px;
+      padding: 20px;
+    }
+
+    h2 {
+      padding-bottom: 20px;
+      letter-spacing: 0.1em;
+    }
+
+    p {
+      letter-spacing: 0.1em;
+    }
+
+    #home-info .info-img {
+      float: right;
+      width: 50%;
+      background: url("logo.jpeg");
+      min-height: 100%;
+      background-size: cover;
+    }
+
+    #home-info .info-content {
+      float: right;
+      width: 50%;
+      height: 100%;
+      text-align: center;
+      padding-top: 200px;
+      overflow: hidden;
+      background-color: white;
+    }
+
+    #home-info .info-content p {
+      padding-bottom: 30px;
+    }
+
+    body {
+      background-color: rgb(56, 122, 197);
+      margin: 0px;
+      padding-right: 50px;
+      padding-left: 50px;
+      font-family: "Lato", sans-serif;
+      text-justify: space-between;
+    }
+
+    .btn {
+      display: inline-block;
+      font-size: 18px;
+      color: #fff;
+      background: rgb(56, 122, 197);
+      padding: 10px 25px;
+      border: 2px solid rgb(56, 122, 197);
+      cursor: pointer;
+      border-radius: 15px;
+      align-items: center;
+      animation-name: blink;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 0.5;
+        transform: scale(0.8);
       }
 
-      a {
-        text-decoration: none;
+      50% {
+        opacity: 1;
+        transform: scale(1);
       }
 
-      /* Home Info */
-      #home-info {
-        height: 640px;
-        margin: 0px;
-        padding: 20px;
+      100% {
+        opacity: 0.5;
+        transform: scale(0.8);
       }
+    }
 
-      h2 {
-        padding-bottom: 20px;
-        letter-spacing: 0.1em;
-      }
+    .btn:hover {
+      background: white;
+      color: rgb(56, 122, 197);
+    }
 
-      p {
-        letter-spacing: 0.1em;
-      }
+    .text-primary {
+      color: rgb(56, 122, 197);
+    }
 
-      #home-info .info-img {
-        float: right;
-        width: 50%;
-        background: url("logo.jpeg");
-        min-height: 100%;
-        background-size: cover;
-      }
+    .l-heading {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+  </style>
 
-      #home-info .info-content {
-        float: right;
-        width: 50%;
-        height: 100%;
-        text-align: center;
-        padding-top: 200px;
-        overflow: hidden;
-        background-color: white;
-      }
+  <section id="home-info" class="bg-dark">
+    <div class="info-img"></div>
+    <div class="info-content">
+      <h2 class="l-heading">
+        MEET THE <span class="text-primary"> BOYS</span>
+      </h2>
+      <p>
+        The Gathering of Home Brothers
+      </p>
+      <a href="hbc.html" class="btn btn-light">Meet Us</a>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
-      #home-info .info-content p {
-        padding-bottom: 30px;
-      }
+      <p>Motto : Domine Dirige Nos</p>
+    </div>
+  </section>
 
-      body {
-        background-color: rgb(56, 122, 197);
-        margin: 0px;
-        padding-right: 50px;
-        padding-left: 50px;
-        font-family: "Lato", sans-serif;
-        text-justify: space-between;
-      }
+</body>
 
-      .btn {
-        display: inline-block;
-        font-size: 18px;
-        color: #fff;
-        background: rgb(56, 122, 197);
-        padding: 10px 25px;
-        border: 2px solid rgb(56, 122, 197);
-        cursor: pointer;
-        border-radius: 15px;
-        align-items: center;
-        animation-name: blink;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes blink {
-        0% {
-          opacity: 0.5;
-          transform: scale(0.8);
-        }
-
-        50% {
-          opacity: 1;
-          transform: scale(1);
-        }
-
-        100% {
-          opacity: 0.5;
-          transform: scale(0.8);
-        }
-      }
-
-      .btn:hover {
-        background: white;
-        color: rgb(56, 122, 197);
-      }
-
-      .text-primary {
-        color: rgb(56, 122, 197);
-      }
-
-      .l-heading {
-        font-size: 40px;
-        line-height: 1.2;
-      }
-    </style>
-
-    <section id="home-info" class="bg-dark">
-      <div class="info-img"></div>
-      <div class="info-content">
-        <h2 class="l-heading">
-          MEET THE <span class="text-primary"> BOYS</span>
-        </h2>
-        <p>
-          The Gathering
-        </p>
-        <a href="hbc.html" class="btn btn-light">Meet Us</a>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <p>Motto : Domine Dirige Nos</p>
-      </div>
-    </section>
-    <h3>Test</h3>
-  </body>
 </html>
